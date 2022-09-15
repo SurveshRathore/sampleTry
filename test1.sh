@@ -1,0 +1,10 @@
+echo Hello Tom
+echo Hello Tom | awk '{ print $0}'
+echo Hello Survesh Rathour | awk '{ print $2}'
+echo Hello Mr Rathour | awk '{ $2 = "Adam"} { print $0}'
+echo Hello Mr.Rathour Survesh.rathour | awk '{print $0}'
+echo Hello Mr.Rathour Survesh.rathour | awk -F. '{print $0}'
+echo Hello Mr.Rathour Survesh.rathour | awk -F. '{print $1}'
+echo Hello Mr.Rathour Survesh.rathour | awk -F. '{print $2}'
+echo Hello Mr.Rathour Survesh.rathour | awk -F. '{print $3}'
+echo Hello Mr.Rathour Survesh.rathour | awk -F. '{print $4}'

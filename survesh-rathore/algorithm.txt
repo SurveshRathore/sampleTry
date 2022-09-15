@@ -1,0 +1,49 @@
+
+/* Algorithm  */
+Step 1:
+
+%%%%create the 4 file using the 'touch' command%%%%
+
+touch algorithm.txt bangalore.png code.sh pune.jpeg
+
+Step 2:
+
+*****In the code.sh file*******
+
+%%%'backup-photos'%%%%%
+Create folder named 'backup-photos' using the mkdir command.
+Check if folder is already exists or not
+if exits
+	then remove it using the rm command
+	then Create folder named 'backup-photos' using the mkdir command
+
+
+step 3:
+
+%% Filter the png Files from all-files %%
+Using the For loop get the png file.
+Get the file name using the awk command.
+Create the folder within the 'backup-photos' folder created in the step 2, and keep it name as the file name
+Get the file extension name using the awk command.
+Create the folder within the 'backup-photos/fileName' folder created above, and keep it name as the file extension name.
+Now move that png file into the 'backup-photos/fileName/fileExtensionName' folder created above.
+**bangalore/ ->png/-> bangalore.png**
+
+
+Step 4:
+
+%%Filter the jpeg Files from all-files %%
+Using the For loop get the jpeg file.
+Get the file name using the awk command.
+Create the folder within the 'backup-photos' folder created in the step 2, and keep it name as the file name
+Get the file extension name using the awk command.
+Create the folder within the 'backup-photos/fileName' folder created above, and keep it name as the file extension name.
+Now move that png file into the 'backup-photos/fileName/fileExtensionName' folder created above.
+**pune/ -> jpeg/ -> pune.jpeg**
+
+Step 5:
+Test the code
+**base code.sh**
+
+
+
